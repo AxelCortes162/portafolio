@@ -5,7 +5,7 @@ load();
 
 dmode.addEventListener("click", e =>{
     body.classList.toggle("darkmode");
-    store(body.classList.contains("darktmode"));
+    store(body.classList.contains("darkmode"));
 })
 
 function load (){

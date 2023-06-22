@@ -14,22 +14,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="contenedor__boton">
-    <input type="checkbox" name="" id="btn-menu" class="boton" onchange="javascript:showContent()">
-    <label for="btn-menu" class="lbl-menu">
-      <span class="boton__linea1"></span>
-      <span class="boton__linea2"></span>
-      <span class="boton__linea3"></span>
-    </label>
+  <div class="boton__darkmode">
+    <button id="dmode"></button>
   </div>
+
   <header class="header">
-    <a href=""><img class="header__logo" src="IMG/Logo/Web depl.svg" alt="logo"></a>
+    <div class="container__logo">
+      <a href=""><img class="header__logo" src="IMG/Logo/Web depl.svg" alt="logo"></a> 
+    </div>
     <nav class="navegacion" id="menu">
       <ul class="navegacion__lista">
-        <li class="navegacion__li"><a class="navegacion__lista-a" href="index.html">Sobre mí</a></li>
+        <li class="navegacion__li"><a class="navegacion__lista-contacto" href="index.html">Inicio</a></li>
       </ul>
     </nav>
+    <div class="contenedor__boton">
+      <input type="checkbox" name="" id="btn-menu" class="boton" onchange="javascript:showContent()">
+      <label for="btn-menu" class="lbl-menu">
+        <span class="boton__linea1"></span>
+        <span class="boton__linea2"></span>
+        <span class="boton__linea3"></span>
+      </label>
+    </div>
   </header>
+  
+  <main>
+    <section>
+      <form class="formulario">
+        <fieldset>
+          <legend>Contactame llenando todos los formnularios</legend>
+        </fieldset> 
+        <div class="contenedor-campos">
+          <div class="campo">
+            <label>Nombre</label>
+            <input class="input-text"  type="text" placeholder="Tu nombre" required>
+          </div>
+          
+          <div class="campo">
+            <label>Teléfono</label>
+            <input class="input-text" type="tel" placeholder="Tu teléfono" required>
+          </div>
+          
+          <div class="campo">
+            <label>E-mail</label>
+            <input class="input-text" type="email" placeholder="Tu e-mail" required>
+          </div>
+          
+          <div class="campo">
+            <label>Mensaje</label>
+            <textarea class="input-text"></textarea>
+          </div>
+        </div>  
+        
+          <div class="alinear-derecha flex">
+            <input class="boton__enviar w-100" type="submit" value="Enviar">
+          </div>
+        
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__desc">Desarrollado por Axel Cortes. 2023</p>
+   </footer>
 </body>
     <script src="script.js"></script>
 </html>

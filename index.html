@@ -14,22 +14,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="contenedor__boton">
-    <input type="checkbox" name="" id="btn-menu" class="boton" onchange="javascript:showContent()">
-    <label for="btn-menu" class="lbl-menu">
-      <span class="boton__linea1"></span>
-      <span class="boton__linea2"></span>
-      <span class="boton__linea3"></span>
-    </label>
-  </div>
+
   <div class="boton__darkmode">
-    <button id="dmode"> &#9885</span></button>
+    <button id="dmode"></button>
   </div>
+
   <header class="header">
-    <a href=""><img class="header__logo" src="IMG/Logo/Web depl.svg" alt="logo"></a>
+    <div class="container__logo">
+      <a href=""><img class="header__logo" src="IMG/Logo/Web depl.svg" alt="logo"></a> 
+    </div>
     <nav class="navegacion" id="menu">
       <ul class="navegacion__lista">
-        <li class="navegacion__li"><a class="navegacion__lista-a" href="#about__me">Sobre mí</a></li>
+        <li class="navegacion__li"><a class="navegacion__lista-a" href="index.html">Sobre mí</a></li>
         <li class="navegacion__li"><a class="navegacion__lista-a" href="#habilidades">Skills</a></li>
         <li class="navegacion__li"><a class="navegacion__lista-a" href="#hobbie">Hobbies</a></li>
         <li class="navegacion__li"><a class="navegacion__lista-a" href="#formacion__acad">Formación</a></li>
@@ -37,12 +33,23 @@
         <li class="navegacion__li"><a class="navegacion__lista-a" href="Contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <div class="contenedor__boton">
+      <input type="checkbox" name="" id="btn-menu" class="boton" onchange="javascript:showContent()">
+      <label for="btn-menu" class="lbl-menu">
+        <span class="boton__linea1"></span>
+        <span class="boton__linea2"></span>
+        <span class="boton__linea3"></span>
+      </label>
+    </div>
   </header>
+
   <main>
     <section class="hero" id="about__me"> 
       <div class="hero__contenedor">
+        <div class="hero__contenedor-saludo">
           <h2 class="hero__saludo"><span>Hola!</span> Soy Axel Cortes</h2>
           <p class="hero__desc">Frontend Developer</p>
+        </div>
           <img class="hero__foto" src="IMG/mifoto.jpg" alt="Foto">
         <div class="social">
           <a target="_blank" href="https://www.instagram.com/axelcortesfonseca/"><img class="social__ig" src="IMG/Redes/Instagram_icon-icons.com_66804.png" alt="instagram"></a>
@@ -52,10 +59,12 @@
         </div>
       </div>
     </section>
+
     <section class="sobre">
       <h2 class="sobre__titulo">Sobre mi</h2>
-      <p class="sobre__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus consequatur in explicabo nulla ipsam omnis voluptatum fugiat accusantium aliquid error magnam distinctio eligendi officiis unde, quia animi minus deleniti.</p>
+      <p class="sobre__desc">Hola! Soy Axel, actualemnte rediso en la Ciudad de México. Soy aprendiz de Desarrollo Web de forma autodidacta mediante el curso del programa de Oracle One y un curso completo en la plataforma de U-demy. Soy una persona que ama la tecnología y por lo tanto siempre estoy queriendo aprender. <br> Me destaco por ser organizado y trabajar bien en equipo, si tengo una duda, no me quedo con eso, siempre pregunto lo que no se. Me gusta mucho lo visual, por eso escogí la especialidad de Front-End.</p>
     </section>
+  
     <section class="skills" id="habilidades">
       <h2 class="skills__titulo">Skills</h2>
       <div class="skills__container">
@@ -102,7 +111,7 @@
         </div>
         <div class="hobbies__campo">
           <ul>
-            <li><img class="hobbies__img" src="IMG/Hobbies/photo-camera-1_icon-icons.com_63898.svg" alt=""></li>
+            <li><img class="hobbies__img" src="IMG/Hobbies/photocameraoutline_80020.png" alt=""></li>
             <li class="hobbies_desc">Fotografía</li>
          </ul>
         </div>
