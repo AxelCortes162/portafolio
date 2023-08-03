@@ -21,20 +21,28 @@ body{
 header{
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px 5px  var(--color_principal);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    background: rgb(251,251,251);
+    background: linear-gradient(0deg, rgba(251,251,251,0.9) 0%, rgba(0,212,255,1) 100%);
 }
 
 .header__logo{
     height: 120px;
 }
 .navegacion{
-    position: fixed;
     background: linear-gradient(#adccee, var(--azul));
     height: auto;
     width: 100%;
     z-index: 3;
     display: none;
     transition: .4s;
+}
+.darkmode .header{
+    background: rgb(238,174,202);
+background: linear-gradient(0deg, rgba(238,174,202,0.9500175070028011) 0%, rgba(32,13,31,1) 100%);
 }
 .darkmode .navegacion{
     background: linear-gradient(var(--primario_darkmode), var(--morado));
@@ -177,12 +185,13 @@ header{
 /*Boton Darkmode*/
 .boton__darkmode{
     position: absolute;
-    top: 35px;
+    top: 15px;
     left: 20px;
+    z-index: 6;
 }
 
 .boton__darkmode button{
-    position: absolute;
+    position: sticky;
      top: -20px;
      left: 90%;
      transform: translate(-50%, -50%);
@@ -201,10 +210,10 @@ header{
     #dmde{
         cursor: pointer;
         content: "";
-        z-index: 5;
+        z-index: 6;
     }
     .boton__darkmode{
-        z-index: 4;
+        z-index: 6;
         cursor: pointer;
     }
 }
@@ -867,3 +876,4 @@ body.darkmode{
             color: black;
         }
     }
+    
